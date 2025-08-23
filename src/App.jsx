@@ -1,7 +1,4 @@
 import React from 'react';
-import { Button } from './components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
-import { Badge } from './components/ui/badge';
 import {
   MapPin,
   Shield,
@@ -44,7 +41,7 @@ function App() {
               <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Features</a>
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
-              <Button className="bg-blue-600 hover:bg-blue-700 shadow-lg">Get Started</Button>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded shadow-lg">Get Started</button>
             </div>
           </div>
         </div>
@@ -55,9 +52,9 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
+              <span className="inline-flex mb-4 items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 hover:bg-blue-200">
                 Trusted GPS Solutions
-              </Badge>
+              </span>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Secure Your Assets with
                 <span className="text-blue-600"> Real-Time GPS Tracking</span>
@@ -68,15 +65,13 @@ function App() {
                 tracking system available in Nigeria and across Africa.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
-                  <a href="tel:+2348060221965">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call 08060221965
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg flex items-center">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call 08060221965
+                </button>
+                <button className="border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-3 px-6 rounded-lg">
                   Learn More
-                </Button>
+                </button>
               </div>
             </div>
             <div className="relative">
@@ -104,41 +99,35 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="text-center">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6">
+              <div className="mb-4">
                 <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
-                <CardTitle>Security Risks</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Vehicle theft and unauthorized usage can lead to significant losses</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Security Risks</h3>
+              </div>
+              <p className="text-gray-600">Vehicle theft and unauthorized usage can lead to significant losses</p>
+            </div>
 
-            <Card className="text-center">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6">
+              <div className="mb-4">
                 <BarChart3 className="h-12 w-12 text-orange-500 mx-auto mb-4" />
-                <CardTitle>Inefficient Routes</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Poor route planning increases fuel costs and reduces productivity</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Inefficient Routes</h3>
+              </div>
+              <p className="text-gray-600">Poor route planning increases fuel costs and reduces productivity</p>
+            </div>
 
-            <Card className="text-center">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6">
+              <div className="mb-4">
                 <Clock className="h-12 w-12 text-yellow-500 mx-auto mb-4" />
-                <CardTitle>Time Management</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">Lack of real-time monitoring leads to operational inefficiencies</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Time Management</h3>
+              </div>
+              <p className="text-gray-600">Lack of real-time monitoring leads to operational inefficiencies</p>
+            </div>
           </div>
 
           <div className="text-center">
-            <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">
+            <span className="inline-flex mb-4 items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800 hover:bg-green-200">
               The Solution
-            </Badge>
+            </span>
             <h4 className="text-2xl font-bold text-gray-900 mb-4">
               Introducing Our Comprehensive GPS Tracking System
             </h4>
@@ -286,86 +275,74 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
                 <Car className="h-12 w-12 text-blue-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Fleet Management</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">Corporate fleets, taxi services, and car hire companies</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Fleet Management</h3>
+              </div>
+              <p className="text-gray-600 text-sm">Corporate fleets, taxi services, and car hire companies</p>
+            </div>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
                 <Truck className="h-12 w-12 text-green-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Logistics</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">Transportation, distribution, haulage, and courier services</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Logistics</h3>
+              </div>
+              <p className="text-gray-600 text-sm">Transportation, distribution, haulage, and courier services</p>
+            </div>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
                 <Building className="h-12 w-12 text-purple-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Construction</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">Heavy machinery, construction equipment, and engineering vehicles</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Construction</h3>
+              </div>
+              <p className="text-gray-600 text-sm">Heavy machinery, construction equipment, and engineering vehicles</p>
+            </div>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
+            <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
                 <Users className="h-12 w-12 text-orange-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Emergency Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">Health services, security, and emergency response vehicles</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold">Emergency Services</h3>
+              </div>
+              <p className="text-gray-600 text-sm">Health services, security, and emergency response vehicles</p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
-            <Card className="text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-blue-50 border-green-200">
-              <CardHeader>
-                <div className="flex justify-center mb-4">
-                  <div className="bg-green-100 rounded-full p-4">
-                    <svg className="h-12 w-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                  </div>
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="flex justify-center mb-4">
+                <div className="bg-green-100 rounded-full p-4">
+                  <svg className="h-12 w-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
                 </div>
-                <CardTitle className="text-xl text-green-800">Sustainability: Renewable Energy Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 text-base mb-4">
-                  Comprehensive solar and inverter installation services for residential, commercial, and industrial applications.
-                  Reduce energy costs, ensure reliable power supply, and contribute to environmental sustainability.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4 text-sm">
-                  <div className="text-left">
-                    <h6 className="font-semibold text-green-700 mb-2">Solar Solutions:</h6>
-                    <ul className="text-gray-600 space-y-1">
-                      <li>• Solar panel installation</li>
-                      <li>• Grid-tie systems</li>
-                      <li>• Off-grid solutions</li>
-                      <li>• Hybrid systems</li>
-                    </ul>
-                  </div>
-                  <div className="text-left">
-                    <h6 className="font-semibold text-green-700 mb-2">Inverter Systems:</h6>
-                    <ul className="text-gray-600 space-y-1">
-                      <li>• Power inverters</li>
-                      <li>• Battery backup systems</li>
-                      <li>• UPS solutions</li>
-                      <li>• Maintenance & support</li>
-                    </ul>
-                  </div>
+              </div>
+              <h3 className="text-xl font-bold text-green-800 mb-4">Sustainability: Renewable Energy Solutions</h3>
+              <p className="text-gray-700 text-base mb-4">
+                Comprehensive solar and inverter installation services for residential, commercial, and industrial applications.
+                Reduce energy costs, ensure reliable power supply, and contribute to environmental sustainability.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="text-left">
+                  <h6 className="font-semibold text-green-700 mb-2">Solar Solutions:</h6>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• Solar panel installation</li>
+                    <li>• Grid-tie systems</li>
+                    <li>• Off-grid solutions</li>
+                    <li>• Hybrid systems</li>
+                  </ul>
                 </div>
-              </CardContent>
-            </Card>
+                <div className="text-left">
+                  <h6 className="font-semibold text-green-700 mb-2">Inverter Systems:</h6>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• Power inverters</li>
+                    <li>• Battery backup systems</li>
+                    <li>• UPS solutions</li>
+                    <li>• Maintenance & support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="bg-white rounded-lg p-8 shadow-lg">
@@ -414,12 +391,12 @@ function App() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            <Card className="p-8">
-              <CardHeader className="text-center pb-6">
-                <CardTitle className="text-2xl">Get In Touch</CardTitle>
-                <CardDescription>We guarantee complete satisfaction</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <div className="text-center pb-6">
+                <h3 className="text-2xl font-bold">Get In Touch</h3>
+                <p className="text-gray-600">We guarantee complete satisfaction</p>
+              </div>
+              <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="bg-blue-100 rounded-full p-3">
                     <Phone className="h-6 w-6 text-blue-600" />
@@ -453,15 +430,13 @@ function App() {
                     <p className="text-gray-600">Millenium Estate, Gbagada, Lagos Nigeria</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             <div className="space-y-6">
-              <Card className="p-6">
-                <CardHeader>
-                  <CardTitle className="text-xl">Why Choose Opygoal Technology?</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="text-xl font-bold mb-4">Why Choose Opygoal Technology?</h3>
+                <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
                     <p className="text-gray-600">Registered and well-established company with proven track record</p>
@@ -478,16 +453,14 @@ function App() {
                     <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
                     <p className="text-gray-600">Comprehensive security solutions beyond GPS tracking</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
               <div className="text-center">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
-                  <a href="tel:+2348060221965">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Now: 08060221965
-                  </a>
-                </Button>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg flex items-center justify-center mx-auto">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now: 08060221965
+                </button>
                 <p className="text-sm text-gray-500 mt-4">
                   Steven Ajakaiye - Director of Operations
                 </p>
@@ -550,4 +523,3 @@ function App() {
 }
 
 export default App;
-
