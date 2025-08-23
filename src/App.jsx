@@ -35,7 +35,7 @@ function App() {
               <img
                 src={logoImage}
                 alt="Opygoal Technology Ltd"
-                className="h-12 sm:h-14 lg:h-16 w-auto object-contain max-w-[160px] sm:max-w-[200px] lg:max-w-[240px]"
+                className="h-12 sm:h-14 w-auto object-contain"
               />
               <div>
                 <h1 className="text-xl font-bold text-gray-900 tracking-tight">
@@ -92,7 +92,7 @@ function App() {
             <img
               src={brandingImage}
               alt="GPS Tracking Solution"
-              className="mx-auto w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain rounded-lg shadow-2xl"
+              className="h-12 sm:h-14 w-auto object-contain"
             />
           </div>
         </div>
