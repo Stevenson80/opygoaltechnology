@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Custom styles for responsive images */
 img {
   max-width: 100%;
