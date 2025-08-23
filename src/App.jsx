@@ -31,7 +31,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <img src={logoImage} alt="Opygoal Technology Ltd" className="h-12 w-auto" />
+              <img src={logoImage} alt="Opygoal Technology Ltd" className="h-10 md:h-12 w-auto" />
               <div>
                 <h1 className="text-xl font-bold text-gray-900 tracking-tight">Opygoal Technology Ltd</h1>
                 <p className="text-sm text-gray-600">GPS Tracking Solutions</p>
@@ -78,7 +78,7 @@ function App() {
               <img
                 src={brandingImage}
                 alt="GPS Tracking Solution"
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-2xl"
               />
             </div>
           </div>
@@ -183,7 +183,7 @@ function App() {
               <img
                 src={dashboardImage}
                 alt="Real-time Dashboard"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -219,7 +219,7 @@ function App() {
               <img
                 src={deviceImage}
                 alt="GT310 GPS Device"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -255,7 +255,7 @@ function App() {
               <img
                 src={trackingImage}
                 alt="Route Tracking"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
