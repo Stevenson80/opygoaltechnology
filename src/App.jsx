@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white font-sans">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b sticky top-0 z-50">
+      <header className="flex justify-between items-center px-6 py-4 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
@@ -35,8 +35,7 @@ function App() {
               <img
                 src={logoImage}
                 alt="Opygoal Technology Ltd"
-                className="h-8 sm:h-10 lg:h-12 w-auto object-contain
-                           max-w-[120px] sm:max-w-[160px] lg:max-w-[200px]"
+                className="h-12 sm:h-14 lg:h-16 w-auto object-contain max-w-[160px] sm:max-w-[200px] lg:max-w-[240px]"
               />
               <div>
                 <h1 className="text-xl font-bold text-gray-900 tracking-tight">
@@ -65,7 +64,7 @@ function App() {
 
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div className="px-6 sm:px-12 lg:px-20 py-16 sm:py-24 lg:py-32">
           <div>
             <span className="inline-flex mb-4 items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">
               Trusted GPS Solutions
@@ -144,7 +143,7 @@ function App() {
       </section>
 
       {/* Footer with Responsive Logo */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900 text-white py-10 px-6 sm:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-3 mb-4">
             <img
