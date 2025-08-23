@@ -12,7 +12,7 @@ import {
   Car,
   Truck,
   Building,
-  Users
+  Users,
 } from 'lucide-react';
 
 // Import images
@@ -31,17 +31,41 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <img src={logoImage} alt="Opygoal Technology Ltd" className="h-10 md:h-12 w-auto" />
+              {/* Adjusted logo size with max-width to prevent overscaling */}
+              <img
+                src={logoImage}
+                alt="Opygoal Technology Ltd"
+                className="h-10 w-auto max-w-[150px] md:h-12 md:max-w-[180px] object-contain"
+              />
               <div>
-                <h1 className="text-xl font-bold text-gray-900 tracking-tight">Opygoal Technology Ltd</h1>
+                <h1 className="text-xl font-bold text-gray-900 tracking-tight">
+                  Opygoal Technology Ltd
+                </h1>
                 <p className="text-sm text-gray-600">GPS Tracking Solutions</p>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-6">
-              <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Features</a>
-              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded shadow-lg">Get Started</button>
+              <a
+                href="#features"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Features
+              </a>
+              <a
+                href="#services"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Services
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Contact
+              </a>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded shadow-lg">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
@@ -75,10 +99,11 @@ function App() {
               </div>
             </div>
             <div className="relative">
+              {/* Constrain hero image size with max-width and height limits */}
               <img
                 src={brandingImage}
                 alt="GPS Tracking Solution"
-                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-2xl"
+                className="w-full max-w-[400px] lg:max-w-[500px] h-auto max-h-[400px] mx-auto object-contain rounded-lg shadow-2xl"
               />
             </div>
           </div>
@@ -104,7 +129,9 @@ function App() {
                 <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Security Risks</h3>
               </div>
-              <p className="text-gray-600">Vehicle theft and unauthorized usage can lead to significant losses</p>
+              <p className="text-gray-600">
+                Vehicle theft and unauthorized usage can lead to significant losses
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md text-center p-6">
@@ -112,7 +139,9 @@ function App() {
                 <BarChart3 className="h-12 w-12 text-orange-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Inefficient Routes</h3>
               </div>
-              <p className="text-gray-600">Poor route planning increases fuel costs and reduces productivity</p>
+              <p className="text-gray-600">
+                Poor route planning increases fuel costs and reduces productivity
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md text-center p-6">
@@ -120,7 +149,9 @@ function App() {
                 <Clock className="h-12 w-12 text-yellow-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Time Management</h3>
               </div>
-              <p className="text-gray-600">Lack of real-time monitoring leads to operational inefficiencies</p>
+              <p className="text-gray-600">
+                Lack of real-time monitoring leads to operational inefficiencies
+              </p>
             </div>
           </div>
 
@@ -160,30 +191,37 @@ function App() {
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Live Vehicle Tracking</h5>
-                    <p className="text-gray-600">See exactly where your vehicles are, anytime, anywhere with our real-time GPS monitoring.</p>
+                    <p className="text-gray-600">
+                      See exactly where your vehicles are, anytime, anywhere with our real-time GPS monitoring.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Superior Mapping Technology</h5>
-                    <p className="text-gray-600">Latest mapping technology with accurate and updated maps across Nigeria and Africa.</p>
+                    <p className="text-gray-600">
+                      Latest mapping technology with accurate and updated maps across Nigeria and Africa.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Comprehensive Dashboard</h5>
-                    <p className="text-gray-600">User-friendly interface showing vehicle status, reports, playback, and maintenance management.</p>
+                    <p className="text-gray-600">
+                      User-friendly interface showing vehicle status, reports, playback, and maintenance management.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
+              {/* Constrain dashboard image size */}
               <img
                 src={dashboardImage}
                 alt="Real-time Dashboard"
-                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-lg"
+                className="w-full max-w-[400px] lg:max-w-[500px] h-auto max-h-[400px] mx-auto object-contain rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -196,30 +234,37 @@ function App() {
                   <Shield className="h-6 w-6 text-blue-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Geo-fencing & Alerts</h5>
-                    <p className="text-gray-600">Set virtual boundaries and receive instant alerts when vehicles enter or exit designated areas.</p>
+                    <p className="text-gray-600">
+                      Set virtual boundaries and receive instant alerts when vehicles enter or exit designated areas.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Shield className="h-6 w-6 text-blue-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Remote Immobilization</h5>
-                    <p className="text-gray-600">Remotely shut down and restart vehicles for enhanced security and theft prevention.</p>
+                    <p className="text-gray-600">
+                      Remotely shut down and restart vehicles for enhanced security and theft prevention.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Shield className="h-6 w-6 text-blue-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Panic Button & Voice Monitoring</h5>
-                    <p className="text-gray-600">Emergency panic button and voice monitoring capabilities for driver safety.</p>
+                    <p className="text-gray-600">
+                      Emergency panic button and voice monitoring capabilities for driver safety.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="lg:order-1">
+              {/* Constrain device image size */}
               <img
                 src={deviceImage}
                 alt="GT310 GPS Device"
-                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-lg"
+                className="w-full max-w-[400px] lg:max-w-[500px] h-auto max-h-[400px] mx-auto object-contain rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -232,30 +277,37 @@ function App() {
                   <MapPin className="h-6 w-6 text-purple-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Shortest Route Mapping</h5>
-                    <p className="text-gray-600">Map the shortest routes and save 20-30% on fuel bills with optimized routing.</p>
+                    <p className="text-gray-600">
+                      Map the shortest routes and save 20-30% on fuel bills with optimized routing.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <BarChart3 className="h-6 w-6 text-purple-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Detailed Reporting</h5>
-                    <p className="text-gray-600">Comprehensive reports including speed, mileage, stops, and driver behavior analysis.</p>
+                    <p className="text-gray-600">
+                      Comprehensive reports including speed, mileage, stops, and driver behavior analysis.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="h-6 w-6 text-purple-500 mt-1" />
                   <div>
                     <h5 className="font-semibold text-gray-900">Unauthorized Stop Monitoring</h5>
-                    <p className="text-gray-600">Monitor unauthorized stops and idle time to increase driver productivity.</p>
+                    <p className="text-gray-600">
+                      Monitor unauthorized stops and idle time to increase driver productivity.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
+              {/* Constrain tracking image size */}
               <img
                 src={trackingImage}
                 alt="Route Tracking"
-                className="w-full max-w-md mx-auto lg:max-w-full h-auto rounded-lg shadow-lg"
+                className="w-full max-w-[400px] lg:max-w-[500px] h-auto max-h-[400px] mx-auto object-contain rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -280,7 +332,9 @@ function App() {
                 <Car className="h-12 w-12 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Fleet Management</h3>
               </div>
-              <p className="text-gray-600 text-sm">Corporate fleets, taxi services, and car hire companies</p>
+              <p className="text-gray-600 text-sm">
+                Corporate fleets, taxi services, and car hire companies
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
@@ -288,7 +342,9 @@ function App() {
                 <Truck className="h-12 w-12 text-green-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Logistics</h3>
               </div>
-              <p className="text-gray-600 text-sm">Transportation, distribution, haulage, and courier services</p>
+              <p className="text-gray-600 text-sm">
+                Transportation, distribution, haulage, and courier services
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
@@ -296,7 +352,9 @@ function App() {
                 <Building className="h-12 w-12 text-purple-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Construction</h3>
               </div>
-              <p className="text-gray-600 text-sm">Heavy machinery, construction equipment, and engineering vehicles</p>
+              <p className="text-gray-600 text-sm">
+                Heavy machinery, construction equipment, and engineering vehicles
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md text-center p-6 hover:shadow-lg transition-shadow">
@@ -304,7 +362,9 @@ function App() {
                 <Users className="h-12 w-12 text-orange-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold">Emergency Services</h3>
               </div>
-              <p className="text-gray-600 text-sm">Health services, security, and emergency response vehicles</p>
+              <p className="text-gray-600 text-sm">
+                Health services, security, and emergency response vehicles
+              </p>
             </div>
           </div>
 
@@ -312,12 +372,24 @@ function App() {
             <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-4">
                 <div className="bg-green-100 rounded-full p-4">
-                  <svg className="h-12 w-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  <svg
+                    className="h-12 w-12 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
                   </svg>
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-green-800 mb-4">Sustainability: Renewable Energy Solutions</h3>
+              <h3 className="text-xl font-bold text-green-800 mb-4">
+                Sustainability: Renewable Energy Solutions
+              </h3>
               <p className="text-gray-700 text-base mb-4">
                 Comprehensive solar and inverter installation services for residential, commercial, and industrial applications.
                 Reduce energy costs, ensure reliable power supply, and contribute to environmental sustainability.
@@ -355,7 +427,9 @@ function App() {
                   <span className="text-2xl font-bold text-blue-600">20-30%</span>
                 </div>
                 <h5 className="font-semibold text-gray-900 mb-2">Fuel Savings</h5>
-                <p className="text-gray-600 text-sm">Reduce fuel costs through optimized routing and monitoring</p>
+                <p className="text-gray-600 text-sm">
+                  Reduce fuel costs through optimized routing and monitoring
+                </p>
               </div>
 
               <div className="text-center">
@@ -363,7 +437,9 @@ function App() {
                   <CheckCircle className="h-8 w-8 text-green-600" />
                 </div>
                 <h5 className="font-semibold text-gray-900 mb-2">Accurate Invoicing</h5>
-                <p className="text-gray-600 text-sm">Proof of visits and accurate timesheets for better customer relations</p>
+                <p className="text-gray-600 text-sm">
+                  Proof of visits and accurate timesheets for better customer relations
+                </p>
               </div>
 
               <div className="text-center">
@@ -371,7 +447,9 @@ function App() {
                   <Shield className="h-8 w-8 text-purple-600" />
                 </div>
                 <h5 className="font-semibold text-gray-900 mb-2">Theft Recovery</h5>
-                <p className="text-gray-600 text-sm">Real-time tracking for quick recovery of stolen vehicles</p>
+                <p className="text-gray-600 text-sm">
+                  Real-time tracking for quick recovery of stolen vehicles
+                </p>
               </div>
             </div>
           </div>
@@ -403,7 +481,10 @@ function App() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-gray-900">Phone</h5>
-                    <a href="tel:+2348060221965" className="text-blue-600 hover:text-blue-800 transition-colors">
+                    <a
+                      href="tel:+2348060221965"
+                      className="text-blue-600 hover:text-blue-800 transition-colors"
+                    >
                       08060221965
                     </a>
                   </div>
@@ -415,7 +496,10 @@ function App() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-gray-900">Email</h5>
-                    <a href="mailto:opygoaltechnologyltd@gmail.com" className="text-green-600 hover:text-green-800 transition-colors">
+                    <a
+                      href="mailto:opygoaltechnologyltd@gmail.com"
+                      className="text-green-600 hover:text-green-800 transition-colors"
+                    >
                       opygoaltechnologyltd@gmail.com
                     </a>
                   </div>
@@ -439,7 +523,9 @@ function App() {
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
-                    <p className="text-gray-600">Registered and well-established company with proven track record</p>
+                    <p className="text-gray-600">
+                      Registered and well-established company with proven track record
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
@@ -447,11 +533,15 @@ function App() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
-                    <p className="text-gray-600">Offshore hosting in USA with backup servers in China and Nigeria</p>
+                    <p className="text-gray-600">
+                      Offshore hosting in USA with backup servers in China and Nigeria
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-1" />
-                    <p className="text-gray-600">Comprehensive security solutions beyond GPS tracking</p>
+                    <p className="text-gray-600">
+                      Comprehensive security solutions beyond GPS tracking
+                    </p>
                   </div>
                 </div>
               </div>
@@ -476,7 +566,12 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <img src={logoImage} alt="Opygoal Technology Ltd" className="h-10 w-auto" />
+                {/* Constrain footer logo size */}
+                <img
+                  src={logoImage}
+                  alt="Opygoal Technology Ltd"
+                  className="h-10 w-auto max-w-[150px] object-contain"
+                />
                 <div>
                   <h4 className="text-lg font-bold">Opygoal Technology Ltd</h4>
                   <p className="text-gray-400 text-sm">Securing your assets, optimizing your future</p>
@@ -502,10 +597,16 @@ function App() {
             <div>
               <h5 className="text-lg font-semibold mb-4">Contact Info</h5>
               <div className="space-y-2 text-gray-400">
-                <a href="tel:+2348060221965" className="block hover:text-white transition-colors">
+                <a
+                  href="tel:+2348060221965"
+                  className="block hover:text-white transition-colors"
+                >
                   Phone: 08060221965
                 </a>
-                <a href="mailto:opygoaltechnologyltd@gmail.com" className="block hover:text-white transition-colors">
+                <a
+                  href="mailto:opygoaltechnologyltd@gmail.com"
+                  className="block hover:text-white transition-colors"
+                >
                   Email: opygoaltechnologyltd@gmail.com
                 </a>
                 <p>Location: Millenium Estate, Gbagada, Lagos Nigeria</p>
