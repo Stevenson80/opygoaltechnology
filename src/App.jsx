@@ -35,7 +35,8 @@ function App() {
               <img
                 src={logoImage}
                 alt="Opygoal Technology Ltd"
-                className="h-12 w-auto object-contain max-h-12"
+                className="h-8 sm:h-10 lg:h-12 w-auto object-contain
+                           max-w-[120px] sm:max-w-[160px] lg:max-w-[200px]"
               />
               <div>
                 <h1 className="text-xl font-bold text-gray-900 tracking-tight">
@@ -98,13 +99,12 @@ function App() {
         </div>
       </section>
 
-      {/* Features Section Example with Responsive Images */}
+      {/* Features Section */}
       <section id="features" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h4 className="text-2xl font-bold text-gray-900 mb-6">Real-Time Monitoring</h4>
-              {/* Content... */}
             </div>
             <div>
               <img
@@ -118,7 +118,6 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="lg:order-2">
               <h4 className="text-2xl font-bold text-gray-900 mb-6">Advanced Security Features</h4>
-              {/* Content... */}
             </div>
             <div className="lg:order-1">
               <img
@@ -132,7 +131,6 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h4 className="text-2xl font-bold text-gray-900 mb-6">Route Optimization & Reports</h4>
-              {/* Content... */}
             </div>
             <div>
               <img
@@ -152,7 +150,8 @@ function App() {
             <img
               src={logoImage}
               alt="Opygoal Technology Ltd"
-              className="h-12 w-auto object-contain max-h-12"
+              className="h-8 sm:h-10 lg:h-12 w-auto object-contain
+                         max-w-[120px] sm:max-w-[160px] lg:max-w-[200px]"
             />
             <div>
               <h4 className="text-lg font-bold">Opygoal Technology Ltd</h4>
