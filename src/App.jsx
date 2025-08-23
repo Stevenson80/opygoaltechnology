@@ -21,6 +21,7 @@ import {
   Zap,
   Eye,
 } from 'lucide-react';
+import { Button } from '@/components/ui/button.jsx';
 import './App.css';
 
 // Import images - using placeholder paths for now
@@ -78,9 +79,9 @@ function App() {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
                 </a>
               </nav>
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
+              <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
                 Get Started
-              </button>
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -105,9 +106,9 @@ function App() {
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-all duration-200">
                   Contact
                 </a>
-                <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg mx-4 mt-2">
+                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg mx-4 mt-2">
                   Get Started
-                </button>
+                </Button>
               </nav>
             </div>
           )}
@@ -138,14 +139,14 @@ function App() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 flex items-center justify-center">
+                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 flex items-center justify-center">
                   <Phone className="mr-2 h-5 w-5" />
                   Call 08060221965
-                </button>
-                <button className="border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 text-gray-700 hover:text-blue-600 font-medium py-4 px-8 rounded-lg transition-all duration-200 flex items-center justify-center">
+                </Button>
+                <Button variant="outline" className="border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 text-gray-700 hover:text-blue-600 font-medium py-4 px-8 rounded-lg transition-all duration-200 flex items-center justify-center">
                   Learn More
                   <ChevronRight className="ml-2 h-5 w-5" />
-                </button>
+                </Button>
               </div>
 
               {/* Stats */}
@@ -427,9 +428,9 @@ function App() {
                 </div>
               </div>
 
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
+              <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
                 Get Free Consultation
-              </button>
+              </Button>
             </div>
 
             <div className="relative">
@@ -497,3 +498,4 @@ function App() {
 }
 
 export default App;
+
