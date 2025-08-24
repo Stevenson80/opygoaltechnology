@@ -20,6 +20,9 @@ import {
   Globe,
   Zap,
   Eye,
+  Sun,
+  Battery,
+  Cpu
 } from 'lucide-react';
 import { Button } from '@/components/ui/button.jsx';
 import './App.css';
@@ -74,6 +77,10 @@ function App() {
                   Services
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
                 </a>
+                <a href="#sustainability" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                  Sustainability
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                </a>
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
                   Contact
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
@@ -102,6 +109,9 @@ function App() {
                 </a>
                 <a href="#services" className="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-all duration-200">
                   Services
+                </a>
+                <a href="#sustainability" className="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-all duration-200">
+                  Sustainability
                 </a>
                 <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-all duration-200">
                   Contact
@@ -382,83 +392,154 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-16 sm:py-24 bg-white">
+      {/* Sustainability Section */}
+      <section id="sustainability" className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                  Ready to Secure Your Assets?
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Get in touch with our experts today and discover how Opygoal Technology can help protect what matters most to you.
-                </p>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Sustainability: Renewable Energy Solutions
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Comprehensive solar and inverter installation services for residential, commercial, and industrial applications.
+              Reduce energy costs, ensure reliable power supply, and contribute to environmental sustainability.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Solar Solutions */}
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                  <Sun className="h-6 w-6 text-yellow-600" />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900">Solar Solutions</h3>
               </div>
-
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Call Us</h3>
-                    <p className="text-blue-600 font-medium">08060221965</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Email Us</h3>
-                    <p className="text-green-600 font-medium">info@opygoaltech.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Visit Us</h3>
-                    <p className="text-purple-600 font-medium">Lagos, Nigeria</p>
-                  </div>
-                </div>
-              </div>
-
-              <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
-                Get Free Consultation
-              </Button>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                  Solar panel installation
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                  Grid-tie systems
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                  Off-grid solutions
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                  Hybrid systems
+                </li>
+              </ul>
             </div>
 
-            <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-8 rounded-2xl shadow-2xl">
-                <div className="text-center text-white space-y-6">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
-                    <Shield className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold">Why Choose Us?</h3>
-                  <div className="space-y-4 text-left">
-                    <div className="flex items-center space-x-3">
-                      <Star className="h-5 w-5 text-yellow-300" />
-                      <span>5+ Years of Experience</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Star className="h-5 w-5 text-yellow-300" />
-                      <span>24/7 Customer Support</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Star className="h-5 w-5 text-yellow-300" />
-                      <span>Nationwide Coverage</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Star className="h-5 w-5 text-yellow-300" />
-                      <span>Affordable Pricing</span>
-                    </div>
-                  </div>
+            {/* Inverter Systems */}
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                  <Cpu className="h-6 w-6 text-blue-600" />
                 </div>
+                <h3 className="text-2xl font-semibold text-gray-900">Inverter Systems</h3>
+              </div>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                  Power inverters
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                  Battery backup systems
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                  UPS solutions
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                  Maintenance & support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 sm:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Get in touch with our team for any inquiries or support
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Lagos Office */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Lagos Office</h3>
+              <p className="text-gray-600 mb-6">
+                29 Amoda Alli, Millennium Estate, Gbagada, Lagos, Nigeria
+              </p>
+
+              <div className="mb-6">
+                <a
+                  href="https://wa.me/2348060221965"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-200 font-medium"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+                  </svg>
+                  (+234) 806-022-1965
+                </a>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-gray-700">
+                  <strong>Steven Ajakaiye</strong>
+                </p>
+                <p className="text-gray-600 text-sm">Service Manager & Data Analyst</p>
+                <p className="text-gray-600 mt-4">
+                  <a
+                    href="mailto:opygoaltechnologyltd@gmail.com"
+                    className="text-blue-600 hover:underline flex items-center"
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    opygoaltechnologyltd@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* Ibadan Office */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Ibadan Office</h3>
+              <p className="text-gray-600 mb-6">
+                31 Oshuntokun Avenue, Bodija, Ibadan, Oyo State, Nigeria
+              </p>
+
+              <div className="mb-6">
+                <a
+                  href="https://wa.me/2348028868540"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-200 font-medium"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+                  </svg>
+                  (+234) 802-886-8540
+                </a>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-gray-700">
+                  <strong>Gbeminiyi Agboola</strong>
+                </p>
+                <p className="text-gray-600 text-sm">Director of Operations</p>
               </div>
             </div>
           </div>
@@ -498,4 +579,3 @@ function App() {
 }
 
 export default App;
-
