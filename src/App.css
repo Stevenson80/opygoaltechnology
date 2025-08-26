@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+
+}
 
 :root {
   --radius: 0.625rem;
@@ -72,12 +77,11 @@
 }
 
 @layer base {
-  * {
-    border: 1px solid var(--border); /* Replace border-border with CSS variable */
-    outline: 2px solid var(--ring); /* Approximate outline-ring/50 with variable */
-    outline-offset: 2px;
+  button {
+    border: 1px solid var(--border);
   }
   body {
     @apply bg-[var(--background)] text-[var(--foreground)];
   }
+
 }
