@@ -1,1 +1,2 @@
 node_modules/.bin/vite -crlf -text eol=lf
+node_modules/.bin/vite -crlf -text eol=lf
