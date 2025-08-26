@@ -1,16 +1,16 @@
-/* Custom styles for responsive images */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* Ensure all images are responsive by default */
 .logo, .brand-image, .device-image {
   max-width: 100%;
   height: auto;
 }
-
-/* Optional: Add smooth scrolling for navigation */
 html {
   scroll-behavior: smooth;
 }
