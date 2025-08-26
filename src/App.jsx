@@ -26,13 +26,12 @@ import {
 } from 'lucide-react';
 import './App.css';
 
-// Import images - using placeholder paths for now
-const logoImage = '/api/placeholder/120/120';
-const gpsLoginImage = '/api/placeholder/600/400';
-const brandingImage = '/api/placeholder/800/600';
-const deviceImage = '/api/placeholder/500/400';
-const dashboardImage = '/api/placeholder/700/500';
-const trackingImage = '/api/placeholder/600/400';
+// Update image imports to use public/ folder
+const logoImage = '/logo.png';
+const brandingImage = '/brandingimage.png';
+const dashboardImage = '/dashboardimage.png';
+const deviceImage = '/deviceimage.png';
+const trackingImage = '/trackingimage.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -280,7 +279,7 @@ function App() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
                       <Globe className="h-4 w-4 text-blue-600" />
                     </div>
                     <div>
